@@ -1,0 +1,101 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 190px 160px 80px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: hsl(216, 50%, 16%);
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 10px 10px 10px 6px rgb(10, 10, 14);
+}
+
+
+
+.image-wrap{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 4px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.card-text h1{
+    display: flex;
+    grid: area;
+    margin: 13px;
+    font-size: 1rem;
+    color: hsl(0, 0%, 100%);
+}
+
+
+.card-text .date {
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+    background-repeat: no-repeat;
+    padding: 6px;
+}
+
+.card-text .ETH {
+    color: hsl(178, 100%, 50%);
+    text-align: left;
+    padding: 6px;
+    justify-content:;
+    display: flex;
+    flex-direction: row;
+}
+
+.value img {
+    height: 15px;
+    width: 15px;
+    margin-top: 10px;
+    margin: auto;
+    margin-left: 0px;
+}
+
+.value {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    font-size: 15px;
+    margin: 15px;
+    
+}
+.attribution{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 0px;
+    margin: 15px;
+    
+}
+.attribution img {
+    height: 15px;
+    width: 15px;
+    margin: 10px;
+    margin-top: 0px;
+}
+
+.card-text p {
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+    margin: 0px;
+}
+
+.card-stats {
+    grid-area: stats;
+}
+
